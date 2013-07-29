@@ -80,7 +80,7 @@ for bundle in myBundles:
         link_link = link['link']
         # now get total clicks
         myClicks = c.link_clicks(link_link)
-        print link_title
+        print link_title.encode('utf-8', 'ignore') #added by ben sullins on July 29th, 2013
         # and the country clicks
         myCountryClicks = c.link_countries(link_link)
         if not myCountryClicks:
